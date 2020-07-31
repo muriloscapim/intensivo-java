@@ -79,3 +79,9 @@ Para visualizar o histórico de commits
 ```
 git log
 ```
+### Clonar um repositório do Github
+
+Quando começar um novo projeto utilizando git, você cria ele no Github e clona o repositório para sua máquina.
+```
+git clone https://github.com/usuario/meu-projeto.git
+```
