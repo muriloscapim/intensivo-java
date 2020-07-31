@@ -26,6 +26,8 @@ Herança permite o reuso de atributos e métodos.
 
 ![Captura de Tela 2020-07-29 às 16 08 21](https://user-images.githubusercontent.com/56240254/88927565-fb616400-d24d-11ea-958d-0b160880b8aa.png)
 
+![0-wrxNDC9_W8juLLyl](https://user-images.githubusercontent.com/56240254/89065127-94bd7280-d341-11ea-9842-e760e0484b43.png)
+
 ## Diagrama de classes da UML
 
 Um diagrama de classes é uma representação da estrutura e relações das classes que servem de modelo para objetos.
@@ -301,7 +303,97 @@ public class Program {
     }
 }
 ```
-Exemplo 2
+### Exemplo 2
+
+```java
+public class Animal {
+    private String nome;
+    private int idade;
+
+    public void emitirSom()
+    {
+        System.out.println("Animal emitindo som...");
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+}
+```
+
+```java
+public class Cachoro extends Animal {
+
+    public void correr()
+    {
+        System.out.println("Cachorro correndo!");
+    }
+    
+    @Override
+    public void emitirSom()
+    {
+        System.out.println("AU AU AU!");
+    }
+}
+```
+
+```java
+public class Cavalo extends Animal {
+
+    public void correr()
+    {
+        System.out.println("Cavalo correndo!");
+    }
+
+    @Override
+    public void emitirSom() {
+        System.out.println("IRRRRIINN!");
+    }
+}
+```
+
+```java
+public class Preguica extends Animal {
+
+    public void subirArvore()
+    {
+        System.out.println("Preguiça subindo em arvores!");
+    }
+
+    @Override
+    public void emitirSom() {
+        System.out.println("AAAAAHHHHZZZZZ!");
+    }
+}
+```
+
+```java
+public class TestaAnimal {
+
+    public static void main(String[] args) {
+
+        Animal animal = new Cachoro();
+        animal.setNome("Rex");
+        animal.setIdade(2);
+        ((Cachoro) animal).correr(); // downcasting
+        animal.emitirSom();
+    }
+}
+```
+
+### Exemplo 3
 
 ```java
 public class Funcionario {
