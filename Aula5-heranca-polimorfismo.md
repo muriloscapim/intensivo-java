@@ -26,6 +26,8 @@ Herança permite o reuso de atributos e métodos.
 
 ![Captura de Tela 2020-07-29 às 16 08 21](https://user-images.githubusercontent.com/56240254/88927565-fb616400-d24d-11ea-958d-0b160880b8aa.png)
 
+### Hierarquia de herança
+
 ![0-wrxNDC9_W8juLLyl](https://user-images.githubusercontent.com/56240254/89065127-94bd7280-d341-11ea-9842-e760e0484b43.png)
 
 ## Diagrama de classes da UML
